@@ -11,7 +11,7 @@
     <h3><%= @story.title %></h3>
     <p class="timeinfo1"><%= @story.created_at.to_formatted_s %></p>
     <div class="body_contain">
-      <%= sanitize(@story.body) %>
+      <%= raw @story.body %>
     </div>
   </div>
 
